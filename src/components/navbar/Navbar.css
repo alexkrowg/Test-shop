@@ -1,0 +1,80 @@
+.navbar {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  color: black;
+  height: 5vw;
+  justify-content: center;
+}
+.logo-name {
+  font-size: 2em;
+}
+.logo {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10em;
+}
+.nav-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 0.9rem;
+}
+.nav-basket {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1em;
+}
+.nav-search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 3em;
+  border: black;
+  border-radius: 5%;
+  border-width: 0 0 0.1em 0;
+  border-style: groove;
+}
+.search-input {
+  border: none;
+  outline: none;
+}
+.account-icon {
+  margin-left: 1em;
+}
+.shopping-cart-icon {
+  margin-left: 1em;
+}
+.search-icon {
+  margin-right: 0.5em;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.underline-hover-animation {
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 0.4em;
+}
+
+.underline-hover-animation::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 1.5px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.underline-hover-animation:hover::before {
+  transform: scaleX(1);
+}
