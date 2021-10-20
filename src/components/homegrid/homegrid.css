@@ -9,14 +9,15 @@ hr {
 .item-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   column-gap: 2em;
   row-gap: 2em;
   margin: 3%;
-  justify-content: center;
+  justify-items: center;
+  align-items: center;
 }
 .item {
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
   max-width: 25vw;
